@@ -1,0 +1,18 @@
+FROM registry.opensource.zalan.do/acid/spilo-15
+
+LABEL org.opencontainers.image.authors="Tobias Florek <me@ibotty.net>" \
+      org.opencontainers.source=https://github.com/ibotty/postgresql-related-packages \
+      org.opencontainers.image.description="Builder to build some PostgreSQL extensions and FDWs on top of spilo"
+
+ENTRYPOINT ["/bin/bash"]
+
+ENV PACKAGES="git build-essential libpq-dev curl libreadline6-dev zlib1g-dev pkg-config cmake libreadline-dev zlib1g-dev flex bison libxml2-dev libxslt-dev libssl-dev libxml2-utils xsltproc ccache clang libclang-dev gcc tree"
+
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/15/bin:/root/.cargo/bin
+
+USER 0
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends $PACKAGES postgresql-server-dev-15 postgresql-server-dev-14 \
+ && curl -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path --profile minimal --default-toolchain stable \
+ && apt-get clean 
