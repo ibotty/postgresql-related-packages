@@ -1,0 +1,18 @@
+Origin: Postgresql extensions and FDWs
+Label: PostgreSQL extensions and FDWs
+Suite: jammy
+Codename: jammy
+Version: 1.0
+Architectures: amd64
+Components: main
+Description: A repository of some PostgreSQL extensions and FDWs
+Date: Tue, 11 Jul 2023 08:45:06 +0000
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 dists/jammy/main/binary-amd64/Packages
+ 9ce8c73932b5cb37851b6bd1b2c5c2ac 29 dists/jammy/main/binary-amd64/Packages.gz
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 dists/jammy/main/binary-amd64/Packages
+ 4039f0342f747ea50230b4e00437d59c8f9faaa0 29 dists/jammy/main/binary-amd64/Packages.gz
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 dists/jammy/main/binary-amd64/Packages
+ 56d52895d97bee94c923e6979adc870869821cc9733b0eb748807f868f760608 29 dists/jammy/main/binary-amd64/Packages.gz
