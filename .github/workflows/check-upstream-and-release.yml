@@ -17,36 +17,38 @@ jobs:
     name: Get info on latest upstream and built package
     runs-on: ubuntu-latest
     outputs:
-      upstream_version: ${{ steps.get_latest_package.outputs.version }}
+      upstream_version: ${{ steps.get_latest_package.outputs.result }}
     steps:
     - name: Get latest package release
       id: get_latest_package
       uses: actions/github-script@v6
       with:
         retries: 3
+        result-encoding: string
         script: |
-          github.rest.repos.getLatestRelease({
+          return await github.rest.repos.getLatestRelease({
             owner: "${{ env.upstream_repo_owner }}",
             repo: "${{ env.upstream_repo_repo }}"
           }).then(r => r.data.tag_name)
 
   build:
-    name: Trigger build of new package
+    name: build new packages
     needs: [info]
     #if: ${{ ! contains(needs.image_tags.outputs.packages, needs.info.outputs.upstream_version) }}
     strategy:
       matrix:
         #postgres: [14,15]
         postgres: ["15"]
-        pgrx_version: ["0.9.7"]
+        pgrx_version: ["0.8.3"]
         box:
           - { runner: ubuntu-latest, arch: amd64 }
           #- { runner: arm-runner, arch: arm64 }
     runs-on: ${{ matrix.box.runner }}
     container:
       image: ghcr.io/${{ github.repository_owner }}/spilo-builder
-      volumes:
-      - /data:/data
+    defaults:
+      run:
+        shell: bash
     steps:
     - uses: actions/checkout@v3
       with:
@@ -58,14 +60,23 @@ jobs:
         override: true
     - uses: Swatinem/rust-cache@v2
 
+    - name: install pgrx
+      run: |
+        cd wrappers
+        set -x
+        cargo install cargo-pgrx --version ${{ matrix.pgrx_version }} --locked
+        cargo pgrx init --pg${{ matrix.postgres }}=/usr/lib/postgresql/${{ matrix.postgres }}/bin/pg_config
+        
     - name: build release artifacts
       run: |
         cd wrappers
-        cargo install cargo-pgrx --version {{ matrix.pgrx_version }} --locked
-        cargo pgxr init --pg{{matrix.postgres}}=/usr/lib/postgresql/{{matrix.postgres}}/bin/pgconfig
-
+        set -x
         cargo pgrx package --no-default-features --features pg${{ matrix.postgres }},${{ env.supabase_features }}
-        
+
+    - name: create debian packages
+      run: |
+        set -x
+        cd wrappers
         # Extension version and path
         extension_version=${{ needs.info.outputs.upstream_version }}
         extension_dir=target/release/wrappers-pg${{ matrix.postgres }}/usr/share/postgresql/${{ matrix.postgres }}/extension
@@ -73,12 +84,12 @@ jobs:
         deb_version=${extension_version:1}
 
         # copy schema file to version update sql files
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.6--${deb_version}.sql
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.7--${deb_version}.sql
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.8--${deb_version}.sql
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.9--${deb_version}.sql
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.10--${deb_version}.sql
-        cp ${extension_dir}/${{ matrix.extension_name }}--${deb_version}.sql ${extension_dir}/${{ matrix.extension_name }}--0.1.11--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.6--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.7--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.8--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.9--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.10--${deb_version}.sql
+        cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.11--${deb_version}.sql
 
         # Create installable package
         mkdir archive
@@ -102,8 +113,8 @@ jobs:
 
         mkdir -p ${package_dir}/usr/share/postgresql/${{ matrix.postgres }}/extension
         cd ${package_dir}/usr/share/postgresql/${{ matrix.postgres }}/extension
-        cp -s ../../../../../var/lib/postgresql/extension/${{ matrix.extension_name }}.control .
-        cp -s ../../../../../var/lib/postgresql/extension/${{ matrix.extension_name }}*.sql .
+        cp -s ../../../../../var/lib/postgresql/extension/wrappers.control .
+        cp -s ../../../../../var/lib/postgresql/extension/wrappers*.sql .
         cd ../../../../../.. 
 
         mkdir -p ${package_dir}/DEBIAN
@@ -115,19 +126,23 @@ jobs:
         echo 'Description: Supabase wrappers PostgreSQL extension' >> ${package_dir}/DEBIAN/control
 
         # Create deb package
-        sudo chown -R root:root ${package_dir}
-        sudo chmod -R 00755 ${package_dir}
-        sudo dpkg-deb --build --root-owner-group ${package_dir} 
+        chown -R root:root ${package_dir}
+        chmod -R 00755 ${package_dir}
+        dpkg-deb --build --root-owner-group ${package_dir} supabase-wrappers-pg${{ matrix.postgres }}.deb
 
+        mkdir -p ../deb-uploads
+        find . -name *.deb -exec cp {} ../deb-uploads \;
+        echo "found debs:"
+        ls $PWD/../deb-uploads -la
 
     - name: update apt repository
       uses: ibotty/apt-repo-update-action@v2
       with:
         debug: true
-        github_token: ${{ github.token }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         repo_supported_arch: |
           amd64
         repo_supported_distro: |
           jammy
         private_key: ${{ secrets.APT_KEY }}
-        update_directory: /data/deb-uploads
+        update_directory: ../deb-uploads
