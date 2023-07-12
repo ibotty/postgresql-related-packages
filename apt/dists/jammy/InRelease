@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Postgresql extensions and FDWs
+Label: PostgreSQL extensions and FDWs
+Suite: stable
+Codename: jammy
+Date: Wed, 12 Jul 2023 07:26:49 UTC
+Architectures: amd64
+Components: main
+Description: A repository of some PostgreSQL extensions and FDWs
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ 08933eebc22d2ad064d605af021636e9 194 main/binary-amd64/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 7459d6502fa4ecf7a9d5b02ba2b9f6859a851320 194 main/binary-amd64/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEKl/ysdHf5utBDC507WT97s0srS8FAmSuVbkACgkQ7WT97s0s
+rS+xWA/+IzQ0IfrU1pIIHDXUKRAUcvTYG7CLD2Mg06/GZTO/Pmd2mQUqYm+k4hHd
+enCq+2RvXLiIY540Pl2Cd1YbHeIT2f2j+MSS5Qknn1ONN9aCRNkJdm+dvryOnkzW
+y9lOlHK8hXBxVEoXLbuGsQ0p4Vxc3RORCkuB7T56W9e1eQ02PY29qnwNYCJzNQwY
+ttj1Nn4aVE3gY02InM+8Lslo4SjEHDxmAs7DA8BncKfGiuLzF2hh+HR2PlSKfOCT
+WUGSokBwFVR2EgaH8YjhfY9+IvBIPyLlIuezkjTq4t+NBCcdVUvubwLT5Q18N1GA
+gAQS6VxGGtQGA8nV8wPThzZtiSi45ZsHVGJ9ElCAW8lbZ5BjxPL0iLE2S+19EFbi
+i5uXt0COuGaG2oe5HiPbrzhDtB7+TQbx9CKb3uoqADTmpNCXhEw6UOIFqZxqRe75
+8S46MyuJ1spYJU9Lu2MRCntM+TlEtYULvJ5Amvs8Gn++p5A8hn/e6wZZXbFnKFdF
+GBWNCicEzYHY8S/ju1oj1v57klcsgY+Xcqyosw21TyugRZkqOX6OZkPqclubFJN7
+epIsCTEDM0gWQwHpBSjkRUpozWFKeVt5uzbRl0s5VP0E6xg8QPdrJamEHF45MDqK
+mEY7XK1mSeR7Ws19DfHXPBJq/6naWCnph+V6HhSECONgnMXCSa0=
+=17C7
+-----END PGP SIGNATURE-----
