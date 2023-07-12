@@ -125,6 +125,8 @@ jobs:
         touch ${package_dir}/DEBIAN/control
         echo 'Package: supabase-wrappers-pg${{ matrix.postgres}}' >> ${package_dir}/DEBIAN/control
         echo "Version: ${deb_version}" >> ${package_dir}/DEBIAN/control
+        echo 'Section: database' >> ${package_dir}/DEBIAN/control
+        echo 'Priority: optional' >> ${package_dir}/DEBIAN/control
         echo 'Architecture: ${{ matrix.box.arch }}' >> ${package_dir}/DEBIAN/control
         echo 'Maintainer: Tobias Florek <me@ibotty.net>' >> ${package_dir}/DEBIAN/control
         echo 'Description: Supabase wrappers PostgreSQL extension' >> ${package_dir}/DEBIAN/control
