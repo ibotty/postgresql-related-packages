@@ -1,0 +1,13 @@
+Package: supabase-wrappers-pg15
+Version: 0.1.14
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/s/supabase-wrappers-pg15/supabase-wrappers-pg15_0.1.14_amd64.deb
+Size: 6957546
+SHA256: 0c9baf1c86da8663ac151bde35ebb48c6e4f43e6a85cde20ff75562ba6ccd854
+SHA1: 04651884f9920a942575caeab6787e7582dfa12f
+MD5sum: b0b1c37e73f84743f9277b65bc8c27fe
+Description: Supabase wrappers PostgreSQL extension
+
