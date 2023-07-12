@@ -152,7 +152,3 @@ jobs:
           jammy
         private_key: ${{ secrets.APT_KEY }}
         update_directory: ../deb-uploads
-
-    - name: Run sccache stat for check
-      shell: bash
-      run: ${SCCACHE_PATH} --show-stats
