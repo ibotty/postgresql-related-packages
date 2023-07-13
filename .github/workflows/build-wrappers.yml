@@ -86,7 +86,7 @@ jobs:
         extension_version=${{ needs.info.outputs.upstream_version }}
         extension_dir=target/release/wrappers-pg${{ matrix.postgres }}/usr/share/postgresql/${{ matrix.postgres }}/extension
         # strip the leading v
-        deb_version=${extension_version:1}
+        deb_version=${extension_version/v/}
 
         # copy schema file to version update sql files
         cp ${extension_dir}/wrappers--${deb_version}.sql ${extension_dir}/wrappers--0.1.6--${deb_version}.sql

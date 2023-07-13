@@ -70,7 +70,7 @@ jobs:
         extension_name="${{ env.upstream_repo_repo }}"
         extension_name="${extension_name//_/-}" # s/_/-/g
         extension_version="${{ needs.info.outputs.upstream_version }}"
-        deb_version="${extension_version:1}"
+        deb_version="${extension_version/v/}"
         package_dir="$PWD/destdir"
 
         mkdir -p ${package_dir}/DEBIAN
