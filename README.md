@@ -7,7 +7,8 @@ Packages are built to be used by usually the latest version of [spilo](https://g
 Right now the following packages are provided.
  * supabase's `wrappers`,
  * `pg_uuidv7`,
- * `pg_financial`.
+ * `pg_financial`,
+ * `rum`.
 
 ## Installation
 ```
