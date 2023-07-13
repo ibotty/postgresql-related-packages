@@ -1,3 +1,16 @@
+Package: pg-financial-pg15
+Version: 1.0.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-financial-pg15/pg-financial-pg15_1.0.1_amd64.deb
+Size: 18690
+SHA256: 33709ff4f0f2e748b844e6f05f9e0a910e1482357a3cfc22b771de916f44f354
+SHA1: 588feaff50f9d1f0069eb09a62408373d2a4265e
+MD5sum: 091d9ba6d9d1e9e202071e0f42f885cc
+Description: intgr pg-financial PostgreSQL extension
+
 Package: pg-uuidv7-pg15
 Version: 1.0.2
 Architecture: amd64
