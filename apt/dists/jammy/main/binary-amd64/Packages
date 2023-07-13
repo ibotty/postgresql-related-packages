@@ -1,3 +1,16 @@
+Package: pg-uuidv7-pg15
+Version: 1.0.2
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uuidv7-pg15/pg-uuidv7-pg15_1.0.2_amd64.deb
+Size: 11152
+SHA256: 12510376bbf517031ce3d6f07a2e6e770a0568053cc56a7134cf60e07fbc5911
+SHA1: 969c24c6ec4814966540eb38bbf11250fe809160
+MD5sum: 762a1c7e73744d710b581374b707b537
+Description: fboulnois pg-uuidv7 PostgreSQL extension
+
 Package: supabase-wrappers-pg15
 Version: 0.1.14
 Architecture: amd64
