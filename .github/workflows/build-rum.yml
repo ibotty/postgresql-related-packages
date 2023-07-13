@@ -54,6 +54,11 @@ jobs:
         repository: ${{ env.upstream_repo_owner }}/${{ env.upstream_repo_repo }}
         ref: ${{ needs.info.outputs.upstream_version }}
 
+    - name: install systemtap-sdt-dev
+      run: |
+        apt-get update
+        apt-get install -y --no-install-recommends systemtap-sdt-dev
+
     - name: make
       run: |
         PATH=/usr/lib/postgresql/${{ matrix.postgres }}/bin:$PATH
