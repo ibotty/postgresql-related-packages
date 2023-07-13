@@ -40,10 +40,10 @@ jobs:
       matrix:
         #postgres: [14,15]
         postgres: ["15"]
-        pgrx_version: ["0.8.3"]
         box:
           - { runner: ubuntu-latest, arch: amd64 }
           #- { runner: arm-runner, arch: arm64 }
+
     runs-on: ${{ matrix.box.runner }}
     container:
       image: ghcr.io/${{ github.repository_owner }}/spilo-builder
@@ -68,7 +68,8 @@ jobs:
       run: |
         cd wrappers
         set -x
-        cargo install cargo-pgrx --version ${{ matrix.pgrx_version }} --locked
+        pgrx_version="$(cargo tree |grep  ' pgrx ' |head -n 1 | cut -f2 -dv )"
+        cargo install cargo-pgrx --version "$pgrx_version" --locked
         cargo pgrx init --pg${{ matrix.postgres }}=/usr/lib/postgresql/${{ matrix.postgres }}/bin/pg_config
         
     - name: build release artifacts
