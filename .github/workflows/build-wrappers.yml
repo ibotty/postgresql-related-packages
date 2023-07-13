@@ -1,5 +1,5 @@
 ---
-name: package with latest upstream release built
+name: package with latest supabase/wrappers release built
 
 env:
   upstream_repo_owner: supabase
