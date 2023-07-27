@@ -12,16 +12,16 @@ MD5sum: 091d9ba6d9d1e9e202071e0f42f885cc
 Description: intgr pg-financial PostgreSQL extension
 
 Package: pg-uuidv7-pg15
-Version: 1.0.2
+Version: 1.1.1
 Architecture: amd64
 Maintainer: Tobias Florek <me@ibotty.net>
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-uuidv7-pg15/pg-uuidv7-pg15_1.0.2_amd64.deb
-Size: 11152
-SHA256: 12510376bbf517031ce3d6f07a2e6e770a0568053cc56a7134cf60e07fbc5911
-SHA1: 969c24c6ec4814966540eb38bbf11250fe809160
-MD5sum: 762a1c7e73744d710b581374b707b537
+Filename: pool/main/p/pg-uuidv7-pg15/pg-uuidv7-pg15_1.1.1_amd64.deb
+Size: 11716
+SHA256: 33be831bb76decadc352c8f4f9bb5ebc98fb12fd67a4699587829da46e9e9a41
+SHA1: 72fa257e051282c54d6b6fb844c34e4e3ba5839b
+MD5sum: 891c331c7ce5ec3b16cfc02de32ddf65
 Description: fboulnois pg-uuidv7 PostgreSQL extension
 
 Package: supabase-wrappers-pg15
