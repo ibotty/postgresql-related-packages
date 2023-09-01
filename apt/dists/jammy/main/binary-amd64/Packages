@@ -11,6 +11,19 @@ SHA1: 588feaff50f9d1f0069eb09a62408373d2a4265e
 MD5sum: 091d9ba6d9d1e9e202071e0f42f885cc
 Description: intgr pg-financial PostgreSQL extension
 
+Package: pg-ivm-pg15
+Version: 1.6
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-ivm-pg15/pg-ivm-pg15_1.6_amd64.deb
+Size: 258302
+SHA256: befe9ac244c2e680736ad8bc986b6c8d78ad34ae2e1c739230e05f884df24e0e
+SHA1: 9eea507c44e795b474de5978122539a5eeee1339
+MD5sum: 5e17ffef742071831b89fc6e98a7e1f1
+Description: sraoss pg-ivm PostgreSQL extension
+
 Package: pg-uuidv7-pg15
 Version: 1.1.1
 Architecture: amd64
