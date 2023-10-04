@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.authors="Tobias Florek <me@ibotty.net>" \
 
 ENTRYPOINT ["/bin/bash"]
 
-ENV PACKAGES="git build-essential libpq-dev curl libreadline6-dev zlib1g-dev pkg-config cmake libreadline-dev zlib1g-dev flex bison libxml2-dev libxslt-dev libssl-dev libxml2-utils xsltproc ccache clang libclang-dev gcc tree"
+ENV PACKAGES="git build-essential libpq-dev curl libreadline6-dev zlib1g-dev pkg-config cmake libreadline-dev zlib1g-dev flex bison libxml2-dev libxslt-dev libssl-dev libxml2-utils xsltproc ccache clang libclang-dev gcc tree liblz4-dev libcurl4-openssl-dev libzstd-dev"
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/15/bin
 
