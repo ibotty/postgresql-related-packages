@@ -13,5 +13,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/p
 USER 0
 
 RUN apt-get update \
- && apt-get install -y --no-install-recommends $PACKAGES postgresql-server-dev-15 postgresql-server-dev-14 \
- && apt-get clean
+ && apt-get install -y --no-install-recommends $PACKAGES postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
+ && apt-get clean \
+ && echo 'github::1001:1001:GitHub actions user:/home/github:/bin/bash' >> /etc/passwd
