@@ -37,6 +37,19 @@ SHA1: 9eea507c44e795b474de5978122539a5eeee1339
 MD5sum: 5e17ffef742071831b89fc6e98a7e1f1
 Description: sraoss pg-ivm PostgreSQL extension
 
+Package: pg-row-hash-pg15
+Version: 0.0.0
+Architecture: amd64
+Maintainer: Tobias Florek <tob@butter.sh>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-row-hash-pg15/pg-row-hash-pg15_0.0.0_amd64.deb
+Size: 524328
+SHA256: 4052e5a575542e5bd5e654ebf429e08ee45db36bfbb9c361de45cd99888f2eb9
+SHA1: 1fa88582c4ee43e7e7c09f3ba62427f00286fc90
+MD5sum: a13725ec68e51ec45103f75b587b52c0
+Description: PostgreSQL extension to compute fingerprints of data
+
 Package: pg-uuidv7-pg15
 Version: 1.1.1
 Architecture: amd64
