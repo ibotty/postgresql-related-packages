@@ -4,7 +4,7 @@ name: package with latest duckdb_fdw release built
 env:
   upstream_repo_owner: alitrack
   upstream_repo_repo: duckdb_fdw
-  duckdb_version: 0.9.2
+  duckdb_version: v0.9.2
 
   # fix for now, because upstream does not have any tags or releases
   # https://github.com/alitrack/duckdb_fdw/issues/31
