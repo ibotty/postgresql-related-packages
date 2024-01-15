@@ -8,7 +8,7 @@ env:
 
   # fix for now, because upstream does not have any tags or releases
   # https://github.com/alitrack/duckdb_fdw/issues/31
-  upstream_version: 90578bc
+  upstream_version: 90578bc59019048d6183b2014cb100dc827966fc
 
 on:
   workflow_dispatch:
