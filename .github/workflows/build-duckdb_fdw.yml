@@ -54,7 +54,7 @@ jobs:
       run:
         shell: bash
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         repository: ${{ env.upstream_repo_owner }}/${{ env.upstream_repo_repo }}
         # ref: ${{ needs.info.outputs.upstream_version }}
