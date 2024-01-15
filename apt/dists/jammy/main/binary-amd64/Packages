@@ -1,14 +1,14 @@
 Package: columnar-pg15
-Version: 1.0.0
+Version: 1.1.0
 Architecture: amd64
 Maintainer: Tobias Florek <me@ibotty.net>
 Priority: optional
 Section: database
-Filename: pool/main/c/columnar-pg15/columnar-pg15_1.0.0_amd64.deb
-Size: 871898
-SHA256: c781d7eda2dc49b947efc970be6fbcd50ce25319e9c13c4f78817636d8c6f153
-SHA1: 4dd7c8194579cc22e99f9316ff055da71101b42b
-MD5sum: 3945b2707e0aa8e860911c8841cf831f
+Filename: pool/main/c/columnar-pg15/columnar-pg15_1.1.0_amd64.deb
+Size: 918670
+SHA256: 00169c1b2c2a6228a5d5fbeaa2e18fbbf8d2adecc1f33381a831643e9c90303e
+SHA1: cd094c8ecdae9d0a12367772eb3896708c0e26b3
+MD5sum: 1b00af1c1fc9514d28f74ce159f6b5c2
 Description: hydradatabase columnar PostgreSQL extension
 
 Package: pg-financial-pg15
