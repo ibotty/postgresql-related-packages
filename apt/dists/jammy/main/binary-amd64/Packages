@@ -11,6 +11,19 @@ SHA1: cd094c8ecdae9d0a12367772eb3896708c0e26b3
 MD5sum: 1b00af1c1fc9514d28f74ce159f6b5c2
 Description: hydradatabase columnar PostgreSQL extension
 
+Package: duckdb-fdw-pg15
+Version: 2.1.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/d/duckdb-fdw-pg15/duckdb-fdw-pg15_2.1.1_amd64.deb
+Size: 12696050
+SHA256: 37c508a3afe953f405563082234858a5e07465663c203e7083e2b56855b99183
+SHA1: daa0a348c26823fbea616dbf1e745823bd08da21
+MD5sum: 8845f19ce6b2cf2304aae8df906c878b
+Description: alitrack duckdb_fdw PostgreSQL extension
+
 Package: pg-financial-pg15
 Version: 1.0.1
 Architecture: amd64
