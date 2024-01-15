@@ -82,12 +82,13 @@ jobs:
       run: |
         set -x
         extension_name="$(jq -r .name < META.json)"
+        deb_name="${extension_name//_/-}"
         deb_version="$(jq -r .version < META.json)"
         package_dir="$PWD/destdir"
 
         mkdir -p ${package_dir}/DEBIAN
         cat <<EOF > "${package_dir}/DEBIAN/control"
-        Package: $extension_name-pg${{ matrix.postgres}}
+        Package: $deb_name-pg${{ matrix.postgres}}
         Version: $deb_version
         Section: database
         Priority: optional
@@ -99,7 +100,7 @@ jobs:
         # Create deb package
         chown -R root:root ${package_dir}
         chmod -R 00755 ${package_dir}
-        dpkg-deb --build --root-owner-group "$package_dir" "$extension_name-pg${{ matrix.postgres }}.deb"
+        dpkg-deb --build --root-owner-group "$package_dir" "$deb_name-pg${{ matrix.postgres }}.deb"
 
         mkdir -p deb-uploads
         find . -name *.deb -exec cp {} deb-uploads \;
