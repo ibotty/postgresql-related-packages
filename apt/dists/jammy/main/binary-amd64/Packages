@@ -77,15 +77,15 @@ MD5sum: 725f6b57c3589aad0195dac36420adc5
 Description: fboulnois pg-uuidv7 PostgreSQL extension
 
 Package: supabase-wrappers-pg15
-Version: 0.1.14
+Version: 0.2.0
 Architecture: amd64
 Maintainer: Tobias Florek <me@ibotty.net>
 Priority: optional
 Section: database
-Filename: pool/main/s/supabase-wrappers-pg15/supabase-wrappers-pg15_0.1.14_amd64.deb
-Size: 6957546
-SHA256: 0c9baf1c86da8663ac151bde35ebb48c6e4f43e6a85cde20ff75562ba6ccd854
-SHA1: 04651884f9920a942575caeab6787e7582dfa12f
-MD5sum: b0b1c37e73f84743f9277b65bc8c27fe
+Filename: pool/main/s/supabase-wrappers-pg15/supabase-wrappers-pg15_0.2.0_amd64.deb
+Size: 7147188
+SHA256: 01986ac2ee5da346c613f82f8fd59f67c51475f3781534a98e5b1913e68f8e6d
+SHA1: a8b0544537ef94670ba89f83a3f307513fc3505d
+MD5sum: abd292f75d47fbb2f4b0e6dde5cf1936
 Description: Supabase wrappers PostgreSQL extension
 
