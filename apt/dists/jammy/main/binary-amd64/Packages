@@ -64,16 +64,16 @@ MD5sum: 4bdf98edea624111b53b6127d02a3e81
 Description: PostgreSQL extension to compute fingerprints of data
 
 Package: pg-uuidv7-pg15
-Version: 1.1.1
+Version: 1.4.1
 Architecture: amd64
 Maintainer: Tobias Florek <me@ibotty.net>
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-uuidv7-pg15/pg-uuidv7-pg15_1.1.1_amd64.deb
-Size: 11716
-SHA256: 33be831bb76decadc352c8f4f9bb5ebc98fb12fd67a4699587829da46e9e9a41
-SHA1: 72fa257e051282c54d6b6fb844c34e4e3ba5839b
-MD5sum: 891c331c7ce5ec3b16cfc02de32ddf65
+Filename: pool/main/p/pg-uuidv7-pg15/pg-uuidv7-pg15_1.4.1_amd64.deb
+Size: 13456
+SHA256: e2aa432b7682577c37e10d51a054b32880d0b970bff0b9b27fa635d30e067e65
+SHA1: 8b27cb0009739655f2778f6f66185043b31b3a17
+MD5sum: 725f6b57c3589aad0195dac36420adc5
 Description: fboulnois pg-uuidv7 PostgreSQL extension
 
 Package: supabase-wrappers-pg15
