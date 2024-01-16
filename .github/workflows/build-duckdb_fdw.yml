@@ -62,11 +62,14 @@ jobs:
 
     - name: install libduckdb.so
       run: |
+        PATH=/usr/lib/postgresql/${{ matrix.postgres }}/bin:$PATH
+
         curl -fsSLo /tmp/libduckdb-linux-amd64.zip "https://github.com/duckdb/duckdb/releases/download/${{ env.duckdb_version }}/libduckdb-linux-amd64.zip"
         unzip /tmp/libduckdb-linux-amd64.zip libduckdb.so
-        cp libduckdb.so $(pg_config --libdir)
-        mkdir destdir
-        cp libduckdb.so destdir
+        libdir="$(pg_config --libdir)"
+        cp libduckdb.so "$libdir"
+        mkdir -p "destdir/$libdir"
+        cp libduckdb.so "destdir/$libdir"
 
     - name: make
       run: |
