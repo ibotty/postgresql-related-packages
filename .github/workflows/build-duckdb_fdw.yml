@@ -16,6 +16,10 @@ inputs:
     description: duckdb version to build
     required: false
     default: v0.9.2
+  deb_revision:
+    description: Debian revision of package
+    required: false
+    default: '1'
 
 on:
   workflow_dispatch:
@@ -93,7 +97,8 @@ jobs:
         set -x
         extension_name="$(jq -r .name < META.json)"
         deb_name="${extension_name//_/-}"
-        deb_version="$(jq -r .version < META.json)"
+        deb_rev="${{ inputs.debian_revision }}"
+        deb_version="$(jq -r .version < META.json)-$deb_rev"
         package_dir="$PWD/destdir"
 
         mkdir -p ${package_dir}/DEBIAN
