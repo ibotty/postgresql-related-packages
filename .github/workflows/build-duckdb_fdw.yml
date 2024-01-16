@@ -4,11 +4,18 @@ name: package with latest duckdb_fdw release built
 env:
   upstream_repo_owner: alitrack
   upstream_repo_repo: duckdb_fdw
-  duckdb_version: v0.9.2
 
+inputs:
   # fix for now, because upstream does not have any tags or releases
   # https://github.com/alitrack/duckdb_fdw/issues/31
-  upstream_version: 90578bc59019048d6183b2014cb100dc827966fc
+  upstream_version:
+    description: shasum of duckdb_fdw
+    required: false
+    default: 90578bc59019048d6183b2014cb100dc827966fc
+  duckdb_version:
+    description: duckdb version to build
+    required: false
+    default: v0.9.2
 
 on:
   workflow_dispatch:
@@ -58,13 +65,13 @@ jobs:
       with:
         repository: ${{ env.upstream_repo_owner }}/${{ env.upstream_repo_repo }}
         # ref: ${{ needs.info.outputs.upstream_version }}
-        ref: ${{ env.upstream_version }}
+        ref: ${{ inputs.upstream_version }}
 
     - name: install libduckdb.so
       run: |
         PATH=/usr/lib/postgresql/${{ matrix.postgres }}/bin:$PATH
 
-        curl -fsSLo /tmp/libduckdb-linux-amd64.zip "https://github.com/duckdb/duckdb/releases/download/${{ env.duckdb_version }}/libduckdb-linux-amd64.zip"
+        curl -fsSLo /tmp/libduckdb-linux-amd64.zip "https://github.com/duckdb/duckdb/releases/download/${{ inputs.duckdb_version }}/libduckdb-linux-amd64.zip"
         unzip /tmp/libduckdb-linux-amd64.zip libduckdb.so
         libdir="$(pg_config --libdir)"
         cp libduckdb.so "$libdir"
