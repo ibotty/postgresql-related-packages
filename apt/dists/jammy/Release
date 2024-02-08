@@ -2,19 +2,19 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: jammy
-Date: Thu, 08 Feb 2024 18:50:33 UTC
+Date: Thu, 08 Feb 2024 19:08:09 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
 MD5Sum:
- 9d3ba3f4c1773eb202ae074e4c8ae4ef 3541 main/binary-amd64/Packages
- 58ffbd16de7425f2feed701ac37794a5 1270 main/binary-amd64/Packages.gz
+ c0933519f6cf3679a4b02b66c65c1c97 3541 main/binary-amd64/Packages
+ 2d83347efbb6ee64e9d914c804054881 1269 main/binary-amd64/Packages.gz
  08933eebc22d2ad064d605af021636e9 194 main/binary-amd64/Release
 SHA1:
- ca596d1bac12ec2356c131696dfe8fe3de5da309 3541 main/binary-amd64/Packages
- 1cc31ed6d2d410293e29c6f6cefc5384215e11dc 1270 main/binary-amd64/Packages.gz
+ 954a5882dba5bcd7b4580aa1e2ec1deee0934b36 3541 main/binary-amd64/Packages
+ 8a699a0948c871829cee58818a5c1efa72264dd7 1269 main/binary-amd64/Packages.gz
  7459d6502fa4ecf7a9d5b02ba2b9f6859a851320 194 main/binary-amd64/Release
 SHA256:
- 11ab12fd34107010b81f652335eb1846fa9d4e354a582abcff94947dd3bbf7ff 3541 main/binary-amd64/Packages
- e3caa6d941f4bb3840eb1355d0dfa1c244a862110e72e722bf72a1dab3cd425d 1270 main/binary-amd64/Packages.gz
+ 5538deec17bef91dd017cd4ef53714172ea2b69a3952f8f481a58204527a11d8 3541 main/binary-amd64/Packages
+ 7947a7ace9c985b6b7dbe86bc9ed9237be1aebc200ffb618f59724977171e2ed 1269 main/binary-amd64/Packages.gz
  cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
