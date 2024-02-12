@@ -64,16 +64,16 @@ MD5sum: a13725ec68e51ec45103f75b587b52c0
 Description: PostgreSQL extension to compute fingerprints of data
 
 Package: pg-row-hashes-pg15
-Version: 0.2.1
+Version: 0.2.2
 Architecture: amd64
 Maintainer: Tobias Florek <tob@butter.sh>
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-row-hashes-pg15/pg-row-hashes-pg15_0.2.1_amd64.deb
-Size: 504484
-SHA256: 8de4df122b75d411af54f0501a4afce3d18b7ff94a8073893f73ae8b23bc3d1d
-SHA1: 8087e5ef2582c75c8d77280b0cdb5199231aad81
-MD5sum: 2bae39843d9afb1e7fb4932db53bc672
+Filename: pool/main/p/pg-row-hashes-pg15/pg-row-hashes-pg15_0.2.2_amd64.deb
+Size: 503976
+SHA256: a73f739335bfcdc94890a9b486ed54ecf02da9077a1d2891ee9bd8b62d8817e7
+SHA1: c820c28fde7d942ad5356a6306ca7eea232cdfb5
+MD5sum: 12064fc1f70a3d26e08c9a2038294ef8
 Description: PostgreSQL extension to compute fingerprints of data
 
 Package: pg-uuidv7-pg15
