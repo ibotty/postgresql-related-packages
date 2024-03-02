@@ -24,6 +24,19 @@ SHA1: 40ce839bd8cc3cd529346304c044a5ae8cb9ffab
 MD5sum: 1213ff2b3f6c7fa7bf2fb3c99ad66bae
 Description: alitrack duckdb_fdw PostgreSQL extension
 
+Package: duckdb-fdw-pg16
+Version: 2.1.1-1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/d/duckdb-fdw-pg16/duckdb-fdw-pg16_2.1.1-1_amd64.deb
+Size: 13611594
+SHA256: 8d6a3af6ca4eb2a08236b45b151ea81b8eec8eb1b97b2a3c3f22d09fb6bd6753
+SHA1: 8e5c583187742a279b0e4d04a568cc452d99e29d
+MD5sum: 7b602175388a4b80156457c7ee278b0c
+Description: alitrack duckdb_fdw PostgreSQL extension
+
 Package: pg-financial-pg15
 Version: 1.0.1
 Architecture: amd64
