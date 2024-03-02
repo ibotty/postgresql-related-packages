@@ -13,9 +13,11 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/p
 USER 0
 
 RUN apt-get update \
- && apt-get install -y --no-install-recommends $PACKAGES \
+ && apt-get dist-upgrade -y \
+ && apt-get install -y --no-install-recommends \
         postgresql-16 \
         postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
+ && apt-get install -y --no-install-recommends $PACKAGES \
  && apt-get clean \
  && for pg_config in /usr/lib/postgresql/*/bin/pg_config; do \
       mkdir -p $($pg_config --sharedir)/extension; \
