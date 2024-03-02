@@ -13,11 +13,11 @@ on:
       upstream_version:
         description: shasum of duckdb_fdw
         required: false
-        default: 90578bc59019048d6183b2014cb100dc827966fc
+        default: a3bb6a7ce2d465358ba243048d96d8f0652c6baa
       duckdb_version:
         description: duckdb version to build
         required: false
-        default: v0.9.2
+        default: v0.10.0
       debian_revision:
         description: Debian revision of package
         required: false
