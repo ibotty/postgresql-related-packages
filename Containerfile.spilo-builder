@@ -13,7 +13,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/p
 USER 0
 
 RUN apt-get update \
- && apt-get dist-upgrade -y \
+ && apt-get dist-upgrade -y -o Dpkg::Options::=--force-confnew \
  && apt-get install -y --no-install-recommends \
         postgresql-16 \
         postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
