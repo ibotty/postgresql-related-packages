@@ -17,6 +17,7 @@ RUN apt-get update \
         postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
  && apt-get clean \
  && for pg_config in /usr/lib/postgresql/*/bin/pg_config; do \
+      mkdir -p $($pg_config --sharedir)/extension; \
       chmod a+rwx $($pg_config --pkglibdir) $($pg_config --sharedir)/extension; \
     done \
  && chmod a+rwx /var/run/postgresql \
