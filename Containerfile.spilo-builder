@@ -14,6 +14,7 @@ USER 0
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends $PACKAGES \
+        postgresql-15 postgresql-16 postgresql-14 \
         postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
  && apt-get clean \
  && for pg_config in /usr/lib/postgresql/*/bin/pg_config; do \
