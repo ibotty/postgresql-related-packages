@@ -67,6 +67,7 @@ jobs:
       run: |
         cd wrappers
         set -x
+        export "PATH=/usr/lib/postgresql/${{ matrix.postgres }}/bin:$PATH"
         pgrx_version="$(cargo tree |grep  ' pgrx ' |head -n 1 | cut -f2 -dv )"
         cargo install cargo-pgrx --version "$pgrx_version" --locked
         cargo pgrx init --pg${{ matrix.postgres }}=/usr/lib/postgresql/${{ matrix.postgres }}/bin/pg_config
@@ -75,6 +76,7 @@ jobs:
       run: |
         cd wrappers
         set -x
+        export "PATH=/usr/lib/postgresql/${{ matrix.postgres }}/bin:$PATH"
         cargo pgrx package --no-default-features --features pg${{ matrix.postgres }},${{ env.supabase_features }}
 
     - name: create debian packages
