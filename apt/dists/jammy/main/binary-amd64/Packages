@@ -76,6 +76,19 @@ SHA1: 183a455b3b89077a16c79d8dc5b16b9acc474fa9
 MD5sum: 98fa3a5fe4630fba57edd4f7f5d6f8cf
 Description: sraoss pg-ivm PostgreSQL extension
 
+Package: pg-ivm-pg16
+Version: 1.8
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-ivm-pg16/pg-ivm-pg16_1.8_amd64.deb
+Size: 263570
+SHA256: 545a76d4fd76b34cb1293c1821fcbc2e46fafdb8a67192926aafae17b97e40e3
+SHA1: 240477d2baf7860b063234fa8a3ab4de9e6022d9
+MD5sum: 9ac65b1b8357952c92684f78f705616c
+Description: sraoss pg-ivm PostgreSQL extension
+
 Package: pg-row-hash-pg15
 Version: 0.0.0
 Architecture: amd64
