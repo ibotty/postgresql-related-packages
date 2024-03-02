@@ -167,3 +167,16 @@ SHA1: a8b0544537ef94670ba89f83a3f307513fc3505d
 MD5sum: abd292f75d47fbb2f4b0e6dde5cf1936
 Description: Supabase wrappers PostgreSQL extension
 
+Package: supabase-wrappers-pg16
+Version: 0.2.0
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/s/supabase-wrappers-pg16/supabase-wrappers-pg16_0.2.0_amd64.deb
+Size: 7122220
+SHA256: 45b3e324202f89c84ebf82f51a6a082e31f234864c7bb4409a1d542b6db7ca92
+SHA1: b341c100c1fff1085d9e94c281ba6b0e6f3f18b6
+MD5sum: b883bb1be6bc11c3de3d843fd9926a4f
+Description: Supabase wrappers PostgreSQL extension
+
