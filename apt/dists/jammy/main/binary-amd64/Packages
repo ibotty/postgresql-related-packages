@@ -37,6 +37,19 @@ SHA1: 588feaff50f9d1f0069eb09a62408373d2a4265e
 MD5sum: 091d9ba6d9d1e9e202071e0f42f885cc
 Description: intgr pg-financial PostgreSQL extension
 
+Package: pg-financial-pg16
+Version: 1.0.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-financial-pg16/pg-financial-pg16_1.0.1_amd64.deb
+Size: 19034
+SHA256: e10df93bb946787949a95183dc6bb599869a8e53a96d0b12d07be227b99cbcee
+SHA1: f98d76035f769fb46adcef9a7feb0ec9c92a6eb1
+MD5sum: 2ddbcaf8f11371c378747eea663da509
+Description: intgr pg-financial PostgreSQL extension
+
 Package: pg-ivm-pg15
 Version: 1.7
 Architecture: amd64
