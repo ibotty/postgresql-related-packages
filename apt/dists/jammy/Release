@@ -2,7 +2,7 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: jammy
-Date: Sat, 02 Mar 2024 12:53:23 UTC
+Date: Mon, 22 Apr 2024 14:19:28 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
