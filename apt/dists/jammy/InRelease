@@ -5,35 +5,35 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: jammy
-Date: Mon, 03 Jun 2024 14:25:52 UTC
+Date: Mon, 03 Jun 2024 14:27:42 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
 MD5Sum:
- f653064636133fef45bb61c3522378db 6194 main/binary-amd64/Packages
- 8c84f5d9a8e81d77c2cc413c236656e0 1903 main/binary-amd64/Packages.gz
+ eca26f5863cda6d62d16d0f2dd6b3468 6194 main/binary-amd64/Packages
+ b00d1e8ae0431347adb15f3d8854c8f4 1897 main/binary-amd64/Packages.gz
  08933eebc22d2ad064d605af021636e9 194 main/binary-amd64/Release
 SHA1:
- 4700c69a58cc86df6528cc303a443f9b87a56635 6194 main/binary-amd64/Packages
- 826e950619ff710d162abe28f1284b27c268a81d 1903 main/binary-amd64/Packages.gz
+ 50a3420be43da17954febb1f3f0e5ba34ce4d287 6194 main/binary-amd64/Packages
+ 7d98e844b33f7abfc5b2e2f41e1fc52b69e7b265 1897 main/binary-amd64/Packages.gz
  7459d6502fa4ecf7a9d5b02ba2b9f6859a851320 194 main/binary-amd64/Release
 SHA256:
- daf436289156d82d8e4ce08cdf7d46365f26fa3298654aafda5def806943f8ad 6194 main/binary-amd64/Packages
- 0063a6d556e4d3abf2b82f8d2a822f855806fdc57d9e88638ecf438220d02ce2 1903 main/binary-amd64/Packages.gz
+ b6cba5f8249abce9c0c2ece6e81088c30d04a9ec4e6ef45af2d09bba6e1462bb 6194 main/binary-amd64/Packages
+ 4857771567c7919e9f11d6022ea02dce87d9207dd4be0302bcc5812e19f6c236 1897 main/binary-amd64/Packages.gz
  cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEKl/ysdHf5utBDC507WT97s0srS8FAmZd0nAACgkQ7WT97s0s
-rS/3zg/8D6K5KgklOQU/cOHOuTvZ55Q4MP8XfwRErN5PirMDHRFTgBpXzsZm+2an
-Uc740Cm0+BofVBTftAstuEOZ5LSvAor9A1G6KUvrTX4cGCvHXKzVREaUkSNCSU6Q
-DzMzT4K3rc6mJIU7opItJbBXd/oLtf4Z2z2y8UOJ3WYxHdPGiC6dExh3K9qvTxn+
-Qqg3wq+xVtOxrZBXStuETqWwa+odjEuSYnRmHdKpCt5Nu779Z2uURHmCcBhigeZl
-o3EH7hu2oQ+LDL/EgGV0Q11a6nwRTtSE/zQrq26rWum6y8Ub2oNbb6dgn67spo2X
-TavKSASJoHoYwPwGyyGfZ0kqXZXG2+MvQ/I+Z9Baci0hEtFj9JaZ608mAN7/mzgM
-PKMD9uM6OKHFLcuU1lRZci+Zmnl3U8UfrGAxSqqfghxaXc++DVsyuG98oziDlzLZ
-R2hWXqVibRQH1zH7r+bPxcGkL5NnN8MtwFH2ZGm7Ep6uonIYiSkUDvbZmB555ZrQ
-xc1wmy7ScNJbBKqzO/ZRbTyY45WxkZ46ZpuUQevGFcpanhdsakw+ECOrjhU3IHiA
-88X/UhH6NXwSJmUAY4By3XDbHYaIHu4OTAgTgFMW6MXlkMxjTIRSSa/Tlz3YNpqI
-Gco234oyh0FebmXqRMSrcVfRonVmO5bb9xuvM9QrIW+vqE800OU=
-=zt9J
+iQIzBAEBCgAdFiEEKl/ysdHf5utBDC507WT97s0srS8FAmZd0t4ACgkQ7WT97s0s
+rS9ZDQ/+JfawXviAVlscztKWTRutNVHC10dMQPfNECZQfq917or+FaUAerfSujQo
+Zr0dUm568/rZCtEtGq7ihhweCWvVul3gKRQC138bYbos5x3On7V78znBbl8yUh8/
+GtDEKJOD1nUuleG3rx3iG6t+jUD765UVhEmBa3DstGaTXHbUSoRBzwm4SdADaVO3
+pDzx1vQRCl8qKr9updfGWC65NitJVGo7ILiMBW+Y1/Ra+b91k2CAd//wJ0R/1akL
+9ZA8zI2iUP9bKDaDEN6VPJduswE3W6Z87wFXCepllF0z5HXtGZ0lid7dX/YMNwZy
+Gdq9StqINlYKnEOQKTHIuAKR4u1bVSkyKpdCMV2yuaEG8U1ldkUHjvxna/4cPmO+
+d5VQzWoM/1XftSwLbsepg3gzk+BKw4wCc/n5elnyj4xq/5vw7Ba8xuHsqq0EnZBZ
+Juz0BYz8bqNKspy+yXZdMoenRjEXi3UDQTMpXXwajm5KlktS7TG5Ela6uVrwYYaV
+r1aTxmSDJQN8oFFSYgzmhHaIjl4qi02pPzsqpT0QyFqVkiQM932nJjxU4tqYqBSj
+sKIMTQ5w0lwN12PORj/nSNpumVAv11EvF5FPB/LmlevFmayfpXBLBphxePF0iFEU
+zUteqHm2OUr6n71iP9WU0Vjh877ElyjpR0nFEioCWIUkiggC/PI=
+=Sj5N
 -----END PGP SIGNATURE-----
