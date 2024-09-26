@@ -15,8 +15,8 @@ USER 0
 RUN apt-get update \
  && apt-get dist-upgrade -y -o Dpkg::Options::=--force-confnew \
  && apt-get install -y --no-install-recommends \
-        postgresql-16 \
-        postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
+        postgresql-17 postgresql-16 \
+        postgresql-server-dev-17 postgresql-server-dev-16 postgresql-server-dev-15 postgresql-server-dev-14 \
  && apt-get install -y --no-install-recommends $PACKAGES \
  && apt-get clean \
  && for pg_config in /usr/lib/postgresql/*/bin/pg_config; do \
