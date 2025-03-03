@@ -126,6 +126,7 @@ jobs:
       with:
         debug: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        git_push_branch: apt-repo
         repo_supported_arch: |
           amd64
         repo_supported_distro: |
