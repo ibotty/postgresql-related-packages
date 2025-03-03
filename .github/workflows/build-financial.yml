@@ -93,14 +93,17 @@ jobs:
         ls $PWD/deb-uploads -la
 
     - name: update apt repository
-      uses: ibotty/apt-repo-update-action@v2
+      uses: Wandalen/wretry.action@master
       with:
-        debug: true
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        git_push_branch: apt-repo
-        repo_supported_arch: |
-          amd64
-        repo_supported_distro: |
-          jammy
-        private_key: ${{ secrets.APT_KEY }}
-        update_directory: ../deb-uploads
+        attempt_limit: 5
+        action: ibotty/apt-repo-update-action@v2
+        with: |
+          debug: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git_push_branch: apt-repo
+          repo_supported_arch: |
+            amd64
+          repo_supported_distro: |
+            bookworm
+          private_key: ${{ secrets.APT_KEY }}
+          update_directory: ../deb-uploads
