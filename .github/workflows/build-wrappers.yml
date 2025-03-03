@@ -38,14 +38,14 @@ jobs:
     #if: ${{ ! contains(needs.image_tags.outputs.packages, needs.info.outputs.upstream_version) }}
     strategy:
       matrix:
-        postgres: ["15", "16", "17"]
+        postgres: ["16", "17"]
         box:
           - { runner: ubuntu-latest, arch: amd64 }
           #- { runner: arm-runner, arch: arm64 }
 
     runs-on: ${{ matrix.box.runner }}
     container:
-      image: ghcr.io/${{ github.repository_owner }}/spilo-builder
+      image: ghcr.io/${{ github.repository_owner }}/builder:${{ matrix.postgres }}
     defaults:
       run:
         shell: bash
@@ -149,6 +149,6 @@ jobs:
         repo_supported_arch: |
           amd64
         repo_supported_distro: |
-          jammy
+          bookworm
         private_key: ${{ secrets.APT_KEY }}
         update_directory: ../deb-uploads
