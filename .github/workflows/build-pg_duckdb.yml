@@ -53,6 +53,11 @@ jobs:
         ref: ${{ needs.info.outputs.upstream_version }}
         submodules: "true"
 
+    - name: ccache
+      uses: hendrikmuhs/ccache-action@v1.2
+      with:
+        create-symlink: true
+
     - name: make
       run: |
         make -j2
