@@ -55,7 +55,7 @@ jobs:
 
     - name: make
       run: |
-        make release
+        make release -j2
         
     - name: make install
       run: |
