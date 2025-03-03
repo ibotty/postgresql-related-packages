@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.authors="Tobias Florek <me@ibotty.net>" \
 
 ENTRYPOINT ["/bin/bash"]
 
-ENV PACKAGES="git build-essential curl pkg-config cmake flex bison xsltproc ccache clang gcc tree unzip"
+ENV PACKAGES="git build-essential curl pkg-config cmake flex bison xsltproc ccache clang gcc tree unzip ninja-build"
 
 USER 0
 
