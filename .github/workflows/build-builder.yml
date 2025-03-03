@@ -1,8 +1,8 @@
 ---
-name: build container
+name: build build container
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_NAME: spilo-builder
+  IMAGE_NAME: builder
   ARCHS: amd64,arm64
 
 on:
@@ -15,6 +15,9 @@ jobs:
   build:
     name: build image
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        postgres: ["17", "16"]
     steps:
     - name: clone
       uses: actions/checkout@v4
@@ -37,10 +40,11 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: ${{ env.IMAGE_NAME }}
-        tags: latest
+        tags: ${{ matrix.postgres }}
         archs: ${{ env.ARCHS }}
+        build-args: PG_MAJOR=${{ matrix.postgres }}
         oci: true
-        containerfiles: ./Containerfile.spilo-builder
+        containerfiles: ./Containerfile.builder
 
     - name: push to registry
       uses: redhat-actions/push-to-registry@v2
