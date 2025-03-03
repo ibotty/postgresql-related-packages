@@ -3,7 +3,7 @@ name: build build container
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
   IMAGE_NAME: builder
-  ARCHS: amd64,arm64
+  ARCHS: amd64
 
 on:
   push:
