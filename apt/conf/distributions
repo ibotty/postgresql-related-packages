@@ -6,3 +6,12 @@ Components: main
 Architectures: amd64
 Description: A repository of some PostgreSQL extensions and FDWs
 SignWith: 2A5FF2B1D1DFE6EB410C2E74ED64FDEECD2CAD2F
+
+Origin: Postgresql extensions and FDWs
+Label: PostgreSQL extensions and FDWs
+Suite: stable
+Codename: bookworm
+Components: main
+Architectures: amd64
+Description: A repository of some PostgreSQL extensions and FDWs
+SignWith: 2A5FF2B1D1DFE6EB410C2E74ED64FDEECD2CAD2F
