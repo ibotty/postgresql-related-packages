@@ -29,12 +29,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ github.token }}
 
-    - name: set up qemu for multi-arch
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y qemu-user-static
-      if: ${{ env.ARCHS != 'amd64' }}
-
     - name: buildah
       id: build-image
       uses: redhat-actions/buildah-build@v2
