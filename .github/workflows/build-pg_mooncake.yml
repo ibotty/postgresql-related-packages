@@ -51,6 +51,7 @@ jobs:
       with:
         repository: ${{ env.upstream_repo_owner }}/${{ env.upstream_repo_repo }}
         ref: ${{ needs.info.outputs.upstream_version }}
+        submodules: "true"
 
     - name: make
       run: |
