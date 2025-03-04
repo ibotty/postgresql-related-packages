@@ -11,3 +11,16 @@ SHA1: e08bcfa9c6a285a671da1343dbf82baab118daaa
 MD5sum: edfdf3f5afa10398b2ee5e61c8220af7
 Description: fboulnois pg-uuidv7 PostgreSQL extension
 
+Package: pg-uuidv7-pg17
+Version: 1.6.0
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uuidv7-pg17/pg-uuidv7-pg17_1.6.0_amd64.deb
+Size: 13904
+SHA256: 93f3440f94e7dc6d0490ac2fa644ee5fc3f915240e505056f36a9c329fa409ac
+SHA1: 06d9dc9d10691b9614d86fbaf56e0b11e3f46ec2
+MD5sum: d5b5aecd1870de15c2938b200c71e45f
+Description: fboulnois pg-uuidv7 PostgreSQL extension
+
