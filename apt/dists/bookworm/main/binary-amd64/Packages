@@ -24,6 +24,19 @@ SHA1: bcf7f08317dad7e49534b609251a0eac6c1f57b8
 MD5sum: 48413a891e0b4a9a5fdb6b554e69bd00
 Description: duckdb pg-duckdb PostgreSQL extension
 
+Package: pg-mooncake-pg17
+Version: 0.1.2
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake-pg17/pg-mooncake-pg17_0.1.2_amd64.deb
+Size: 41145380
+SHA256: 8d3c303ecd8d28da4876f35d8cccd16ac8c95192c171048398442b98a4c066bf
+SHA1: 673d4e3e9e31dc91912bab6a4b4eb84822e2f386
+MD5sum: 73a254a5f0b0af88ee286e317db20142
+Description: Mooncake-Labs pg-mooncake PostgreSQL extension
+
 Package: pg-row-hashes-pg17
 Version: 0.2.7
 Architecture: amd64
