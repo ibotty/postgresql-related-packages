@@ -1,0 +1,13 @@
+Package: pg-uuidv7-pg16
+Version: 1.6.0
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uuidv7-pg16/pg-uuidv7-pg16_1.6.0_amd64.deb
+Size: 13912
+SHA256: ac8e37404999197ac15d688c2a8eff4d06f111e82cdb3d7a8e08cd4b2bd77bc7
+SHA1: e08bcfa9c6a285a671da1343dbf82baab118daaa
+MD5sum: edfdf3f5afa10398b2ee5e61c8220af7
+Description: fboulnois pg-uuidv7 PostgreSQL extension
+
