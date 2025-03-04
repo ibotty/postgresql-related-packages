@@ -1,5 +1,5 @@
 ARG PG_MAJOR
-FROM ghcr.io/cloudnative-pg/postgresql:$PG_MAJOR
+FROM ghcr.io/cloudnative-pg/postgresql:${PG_MAJOR}-bookworm
 
 LABEL org.opencontainers.image.authors="Tobias Florek <me@ibotty.net>" \
       org.opencontainers.source=https://github.com/ibotty/postgresql-related-packages \
