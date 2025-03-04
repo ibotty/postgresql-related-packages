@@ -24,6 +24,19 @@ SHA1: bcf7f08317dad7e49534b609251a0eac6c1f57b8
 MD5sum: 48413a891e0b4a9a5fdb6b554e69bd00
 Description: duckdb pg-duckdb PostgreSQL extension
 
+Package: pg-row-hashes-pg17
+Version: 0.2.7
+Architecture: amd64
+Maintainer: Tobias Florek <tob@butter.sh>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-row-hashes-pg17/pg-row-hashes-pg17_0.2.7_amd64.deb
+Size: 271222
+SHA256: 68299de2bf5a1e3173c3c328ce91f32a5f9bb50d03cde8c2f2d565ab55daf36d
+SHA1: 1e81abbdd0de4a3223caded3170481b23fdbc4c2
+MD5sum: 483f687a6db9ed837fe7e78aafdca207
+Description: PostgreSQL extension to compute fingerprints of data
+
 Package: pg-uuidv7-pg16
 Version: 1.6.0
 Architecture: amd64
