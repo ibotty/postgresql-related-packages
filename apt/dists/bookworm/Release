@@ -2,7 +2,7 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: bookworm
-Date: Tue, 04 Mar 2025 21:35:18 UTC
+Date: Tue, 04 Mar 2025 21:35:27 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
