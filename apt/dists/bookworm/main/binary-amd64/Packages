@@ -63,3 +63,16 @@ SHA1: 06d9dc9d10691b9614d86fbaf56e0b11e3f46ec2
 MD5sum: d5b5aecd1870de15c2938b200c71e45f
 Description: fboulnois pg-uuidv7 PostgreSQL extension
 
+Package: supabase-wrappers-pg17
+Version: 0.4.5
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/s/supabase-wrappers-pg17/supabase-wrappers-pg17_0.4.5_amd64.deb
+Size: 7483164
+SHA256: 1dc8ed1d49efe24e8bf0c2628ae0cbb154f1430052a89c5437c31266e3822588
+SHA1: 79e2eb086103c7fce22cfab48bc5411921e026a5
+MD5sum: bb985239f682b2893683f6e550d07edf
+Description: Supabase wrappers PostgreSQL extension
+
