@@ -1,6 +1,0 @@
-Archive: stable
-Component: main
-Origin: Postgresql extensions and FDWs
-Label: PostgreSQL extensions and FDWs
-Architecture: amd64
-Description: A repository of some PostgreSQL extensions and FDWs
