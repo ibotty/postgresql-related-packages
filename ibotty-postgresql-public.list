@@ -1,1 +1,1 @@
-deb https://ibotty.github.io/postgresql-related-packages/apt jammy main
+deb https://ibotty.github.io/postgresql-related-packages/apt bookworm main
