@@ -1,3 +1,16 @@
+Package: pg-duckdb-pg17
+Version: 0.3.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-duckdb-pg17/pg-duckdb-pg17_0.3.1_amd64.deb
+Size: 22410444
+SHA256: ca219409e25b01eef349cc2f4a05c64ce19b37dc45dd948b4dabc50b957e0a9f
+SHA1: bcf7f08317dad7e49534b609251a0eac6c1f57b8
+MD5sum: 48413a891e0b4a9a5fdb6b554e69bd00
+Description: duckdb pg-duckdb PostgreSQL extension
+
 Package: pg-uuidv7-pg16
 Version: 1.6.0
 Architecture: amd64
