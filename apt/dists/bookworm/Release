@@ -2,19 +2,19 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: bookworm
-Date: Tue, 04 Mar 2025 21:42:49 UTC
+Date: Wed, 09 Jul 2025 19:09:41 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
 MD5Sum:
- 9f50dc8f555e6e00578bdffbbf4d2a02 4009 main/binary-amd64/Packages
- 3ed38729d25750026a47ae687b859b3c 1312 main/binary-amd64/Packages.gz
+ 7acc26ba545846c697f0e6c351708864 4468 main/binary-amd64/Packages
+ 0b6e557fc24c43d21ea995731df7fb65 1423 main/binary-amd64/Packages.gz
  08933eebc22d2ad064d605af021636e9 194 main/binary-amd64/Release
 SHA1:
- 5b1d5fbafb6aaca8ec4102f1eda11f293e046bbd 4009 main/binary-amd64/Packages
- eb8e34032a59b05e5446d75c53939d9af76e0a16 1312 main/binary-amd64/Packages.gz
+ cc2af9967df9ad3831c75a9aece51f64d81d5ea1 4468 main/binary-amd64/Packages
+ 56391b417adc0b0fa467b29ebfb4c6e2b739b9ea 1423 main/binary-amd64/Packages.gz
  7459d6502fa4ecf7a9d5b02ba2b9f6859a851320 194 main/binary-amd64/Release
 SHA256:
- 972afe301ad212a36f1d3efb609869bf17b93e80db0b1969fd4e934fe2b017cb 4009 main/binary-amd64/Packages
- a4a3d3a2a9efda776b162086e6afc8220c2b523cdd2ac61ff0c1d2816a4fe6ae 1312 main/binary-amd64/Packages.gz
+ 42363afda2126562bf9fa3e25be15a7531fc126208f806dd85e0fdc4743b0969 4468 main/binary-amd64/Packages
+ ccd72fe54dc725a441e284ad587f973d2b814973e49af136d99fdf79dda5d776 1423 main/binary-amd64/Packages.gz
  cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
