@@ -5,7 +5,7 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: jammy
-Date: Wed, 09 Jul 2025 19:09:40 UTC
+Date: Wed, 09 Jul 2025 19:14:47 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
@@ -23,17 +23,17 @@ SHA256:
  cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEKl/ysdHf5utBDC507WT97s0srS8FAmhuvnUACgkQ7WT97s0s
-rS/P2A/8DsBRTqB9TvKsbhw/95cTDyp6ot2X8jT1UTwB99ZQaAVS2P/8TQSSrMtn
-LB3J+J9O/wPvtxz2rfTqDe6DEfqIONCb3G4KpW/DfV2FQ+E+8f0IfsP4sqF2t1tk
-J5lEmWfzspYLcAZfwmtFIsUNh+RvQA/QdwL+QbGLPoN/pTGQY5yoy0BwM8LsPD3a
-J6ETLNQA5Oa1rd/4QGHOvyhm4qfLSTR5yEr72l2sGPf/eGXNThVGFs8yjtfTc110
-Z3CnGV7XNoeBtvggjb+zFCi0GoaUbXTqh0tsMo8zDDehQZhmHga/e+hNMtZV68HC
-R8gFnd7l5AT0TAhhwt8r/IgbhEH6GzDPxZ2xgLM/9RzQEbcb7iazk8jHvM37Tid2
-0igOQUgggmJyvcMIcH6DU+XT5mAaX4AsqOw2jfsSZLCG1cPpwI5kPuHX5xnbuPlz
-/wC7/EKrEDl6BUk3QrXIQKRHBFSA7GWJr6RL3NggXSY+bA+AcZtjxAzmBALDru+t
-5FNIuV4V8sCrlMleI6E4mE8qy0p44GSLuj3yDJHGXlEB1n53VRfZCdcC7jc/NSxN
-NbR+DlrB4dpA8PwRIgxLDZ+CazB5SU0BAPlIH6g3WwkGsWvuSEOXEMdMvkP/vV9S
-zgLJDBoo142JdQCR0Jmml7brSxN7WSyMrpHX/mxZVJIiErufOrU=
-=l359
+iQIzBAEBCgAdFiEEKl/ysdHf5utBDC507WT97s0srS8FAmhuv6cACgkQ7WT97s0s
+rS953w//fQPCRqqUA4R9ixlxPi98A9GZqdG0jgirll3y1bPCAP0lr2K4GjhMLCrp
++15/CBk6G+WhD7wqS5+Dmbh1gyzHp1eMwrxf3tQH15WwkxVhP7MOIk0njL2mzrHO
+Ub2A81tpnkIRWOjipMc5u/Mb+QLOerYnecGEQm02geG28E59cNszW2Hmvliipkkh
+AVH5gu60bebxv0oryfdb6yQQYgubka0NdRk2RZwV1TsVUqIteiZ14FEJeFhkeAfd
+pG+g2+b/OcvGXMt15GCFmaBQtvbNDPZ6TyuFDlCISFBzTTKuOAkgjiQyUN4uLhzl
+MywHSDDxCzH7U6vZwEC1IuRb8yUtJoW9nycdZ9Siht8BRYg/B2Xj9ig/lIqW5Y6w
+aH7qTySpOurubHWuHxmnzKePEyyWyABtF+dz6XcukqbPJyDCzkt1EF26giNbuvzB
+YUTtYyV2A97iJswV5XZ04WcmC3X1QhsqhsuE1D2qsYMl0O24YtfVH7Y7F93RJaF8
+RcIKFDmSwzfmxODwu3BvmA38OeQYBNhZ+YVcto15yfyftW+iRzhChFIPv7dK9136
+jZw9Ykn/6cdqE4jio3W7J4YuHftSPePZcF68IHEYosaPRVhXICNciWzMOiRmJIYX
+C+WCdjtxyxldBonmAAkEl9O491lZAb9UKOFSJY/eDXvcp3c8CpY=
+=ihnS
 -----END PGP SIGNATURE-----
