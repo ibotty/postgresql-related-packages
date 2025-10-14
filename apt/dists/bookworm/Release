@@ -2,19 +2,19 @@ Origin: Postgresql extensions and FDWs
 Label: PostgreSQL extensions and FDWs
 Suite: stable
 Codename: bookworm
-Date: Tue, 14 Oct 2025 09:29:25 UTC
+Date: Tue, 14 Oct 2025 10:18:14 UTC
 Architectures: amd64
 Components: main
 Description: A repository of some PostgreSQL extensions and FDWs
 MD5Sum:
- fc93679b64a0f22cf02d410a715735d2 4468 main/binary-amd64/Packages
- e4e578956b0c503e087d1ecc9ef3fa64 1419 main/binary-amd64/Packages.gz
+ 09f36a7a50ebb03824354701cafd4097 4468 main/binary-amd64/Packages
+ c45fc90c6ccf48a29daf1d4a3af23156 1413 main/binary-amd64/Packages.gz
  08933eebc22d2ad064d605af021636e9 194 main/binary-amd64/Release
 SHA1:
- 9c0da58617b88a20a9cc05eca5243143c3044555 4468 main/binary-amd64/Packages
- 9bdc26864393bb07d4553ba7f1a7c0ed43126093 1419 main/binary-amd64/Packages.gz
+ 6d2f6badc0db209a109b1f952c4df3e410c8fdf1 4468 main/binary-amd64/Packages
+ 62247efb606f73413788093593db54657e5f4a52 1413 main/binary-amd64/Packages.gz
  7459d6502fa4ecf7a9d5b02ba2b9f6859a851320 194 main/binary-amd64/Release
 SHA256:
- a73c37b0713455d5f273d0876e89550f46fd4fe6409a93ae289d4b01ac405634 4468 main/binary-amd64/Packages
- 8c60afc2469bb8c800731cbdf8809bf5d290b1bb7778abc0542993ba17d3853f 1419 main/binary-amd64/Packages.gz
+ c6024c5dbbd6b4c6a1bb4c2cb2ee9cd244abcaf51d78ddbc7c127844020c4cf9 4468 main/binary-amd64/Packages
+ 423f1fab61a01b2535f0ad400c6f4ca1854439df80e476d6d763f51cf740b618 1413 main/binary-amd64/Packages.gz
  cf2878f4fd23298a77c93183b49c8d37f764cb8580ec05b08332cc0e376ca4f0 194 main/binary-amd64/Release
