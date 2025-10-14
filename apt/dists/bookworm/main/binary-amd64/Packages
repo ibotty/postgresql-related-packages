@@ -51,16 +51,16 @@ MD5sum: 73a254a5f0b0af88ee286e317db20142
 Description: Mooncake-Labs pg-mooncake PostgreSQL extension
 
 Package: pg-row-hashes-pg16
-Version: 0.3.1
+Version: 0.3.2
 Architecture: amd64
 Maintainer: Tobias Florek <tob@butter.sh>
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-row-hashes-pg16/pg-row-hashes-pg16_0.3.1_amd64.deb
-Size: 357038
-SHA256: ebac7c2b25d0454d1fa18387539a0006f3f76ffc6507a8bba54ac8931d2b2ce6
-SHA1: e0bbe4586a1407aaa8356c506ddf28bfdf282dae
-MD5sum: 7dde07793aa5d966a6ab91d961447e82
+Filename: pool/main/p/pg-row-hashes-pg16/pg-row-hashes-pg16_0.3.2_amd64.deb
+Size: 461194
+SHA256: 3e83a694349dda01d8c8a02cf54c657305457a687d52c3855f60e038b8a550d5
+SHA1: 47729b24044dc8fb42b57c3810edb504ae6bc779
+MD5sum: 779ed8de0dbe846f16fe93b64daf416f
 Description: PostgreSQL extension to compute fingerprints of data
 
 Package: pg-row-hashes-pg17
