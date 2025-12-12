@@ -58,6 +58,15 @@ jobs:
       with:
         create-symlink: true
 
+    - name: install dependencies
+      run: |
+        apt-get update
+        apt-get install -y \
+              build-essential libreadline-dev zlib1g-dev flex bison libxml2-dev \
+              libxslt-dev libssl-dev libxml2-utils xsltproc pkg-config libc++-dev \
+              libc++abi-dev libglib2.0-dev libtinfo6 cmake libstdc++-12-dev \
+              liblz4-dev libcurl4-openssl-dev ninja-build
+
     - name: make
       run: |
         make -j2
