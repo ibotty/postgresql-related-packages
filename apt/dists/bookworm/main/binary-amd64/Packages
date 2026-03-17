@@ -50,6 +50,19 @@ SHA1: 673d4e3e9e31dc91912bab6a4b4eb84822e2f386
 MD5sum: 73a254a5f0b0af88ee286e317db20142
 Description: Mooncake-Labs pg-mooncake PostgreSQL extension
 
+Package: pg-parquet-pg14
+Version: 0.5.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet-pg14/pg-parquet-pg14_0.5.1_amd64.deb
+Size: 6894680
+SHA256: a845caaaf97a95dcf1bbd233167ee223e2a1db9ac6cc25015b1813fee65377ee
+SHA1: 6108a0b04a15fce5ec471ea9ed71215dc26edab6
+MD5sum: a196d9c36e1034985413fcdb958822e8
+Description: pg_parquet PostgreSQL extension
+
 Package: pg-row-hashes-pg16
 Version: 0.3.2
 Architecture: amd64
