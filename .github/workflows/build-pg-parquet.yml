@@ -34,6 +34,9 @@ jobs:
   build:
     name: build new packages
     needs: [info]
+    concurrency:
+      group: apt-update
+      cancel-in-progress: false
     #if: ${{ ! contains(needs.image_tags.outputs.packages, needs.info.outputs.upstream_version) }}
     strategy:
       matrix:
