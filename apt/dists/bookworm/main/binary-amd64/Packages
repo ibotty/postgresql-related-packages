@@ -89,6 +89,19 @@ SHA1: 1b47feaf013a8d6359e7e6b84a781a222cd9773b
 MD5sum: 26e9ae421135cb073c56853789e6276a
 Description: pg_parquet PostgreSQL extension
 
+Package: pg-parquet-pg17
+Version: 0.5.1
+Architecture: amd64
+Maintainer: Tobias Florek <me@ibotty.net>
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet-pg17/pg-parquet-pg17_0.5.1_amd64.deb
+Size: 6894048
+SHA256: efed12930aba026359953d3206ad914e5ca30f028f094d04ddc84b4a36c405f3
+SHA1: 1a57973af414ec8d3f0b840e86a3104404589ee7
+MD5sum: 517d52e24a1a9a7fc1db8e670334dfdd
+Description: pg_parquet PostgreSQL extension
+
 Package: pg-row-hashes-pg16
 Version: 0.3.2
 Architecture: amd64
