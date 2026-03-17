@@ -84,7 +84,7 @@ jobs:
         set -x
         # Extension version and path
         extension_version=${{ needs.info.outputs.upstream_version }}
-        extension_dir=../target/release/pg_parquet-pg${{ matrix.postgres }}/usr/share/postgresql/${{ matrix.postgres }}/extension
+        extension_dir=./target/release/pg_parquet-pg${{ matrix.postgres }}/usr/share/postgresql/${{ matrix.postgres }}/extension
         # strip the leading v
         deb_version=${extension_version/v/}
 
@@ -93,7 +93,7 @@ jobs:
 
         # Create installable package
         mkdir archive
-        cp `find ../target/release -type f -name "pg_parquet*"` archive
+        cp `find ./target/release -type f -name "pg_parquet*"` archive
  
         # name of the package directory before packaging
         package_dir="pg_parquet-$extension_version-pg${{ matrix.postgres }}-${{ matrix.box.arch }}-linux-gnu"
@@ -132,10 +132,10 @@ jobs:
         chmod -R 00755 ${package_dir}
         dpkg-deb --build --root-owner-group ${package_dir} pg_parquet-pg${{ matrix.postgres }}.deb
 
-        mkdir -p ../deb-uploads
-        find . -name *.deb -exec cp {} ../deb-uploads \;
+        mkdir -p ./deb-uploads
+        find . -name *.deb -exec cp {} ./deb-uploads \;
         echo "found debs:"
-        ls $PWD/../deb-uploads -la
+        ls $PWD/deb-uploads -la
 
     - name: update apt repository
       uses: ibotty/apt-repo-update-action@v2
