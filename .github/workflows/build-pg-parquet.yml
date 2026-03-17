@@ -119,7 +119,7 @@ jobs:
 
         mkdir -p ${package_dir}/DEBIAN
         touch ${package_dir}/DEBIAN/control
-        echo 'Package: pg_parquet-pg${{ matrix.postgres}}' >> ${package_dir}/DEBIAN/control
+        echo 'Package: pg-parquet-pg${{ matrix.postgres}}' >> ${package_dir}/DEBIAN/control
         echo "Version: ${deb_version}" >> ${package_dir}/DEBIAN/control
         echo 'Section: database' >> ${package_dir}/DEBIAN/control
         echo 'Priority: optional' >> ${package_dir}/DEBIAN/control
